@@ -10,7 +10,7 @@ class CuDFMix(object):
 
     def to_df(self, sql):
 
-        chunk_len = 2000
+        chunk_len = 20000
         ptbl = '_'.join(['kml_ptbl',
                          str(uuid.uuid4().hex[0:8]),
                          str(math.floor(time.time()))])
